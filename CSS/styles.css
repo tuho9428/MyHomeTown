@@ -1,5 +1,4 @@
 /* Reset some default styles */
-
 .main-content {
     max-width: 800px;
     margin: 20px auto;
@@ -90,7 +89,7 @@ body {
   }
   
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #2549e9;
     color: white;
   }
   
