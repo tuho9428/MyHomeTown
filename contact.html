@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Hometown - Contact</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <img src="./images/vn12.png" alt="My Hometown Logo" width="20%">
+            <h1>
+                <a href="home.html" class="hometown-link">My Hometown</a>
+            </h1>
+        </div>
+    
+        <div class="topnav" id="myTopnav">
+                <a href="home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+                <a href="attractions.html"> <i class="fa fa-bookmark"></i> Attractions</a>
+                <a href="businesses.html"> <i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+                <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+    </header>
+
+    <!-- Contact Page Content -->
+    <div class="main-content">
+        <h1>Contact Us</h1>
+        <p>Have questions or suggestions? Reach out to us!</p>
+
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Preferred Contact Method:</label>
+            <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="services">Interested Services:</label>
+            <select id="services" name="services[]" multiple>
+                <option value="tour">Guided Tours</option>
+                <option value="events">Local Events</option>
+                <option value="business">Business Opportunities</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Your JavaScript may go here if needed -->
+    <script src="JavaScript/script.js"></script>
+
+	<!-- Customize the form fields, labels, and options according to your specific needs. Also, make sure to handle the form submission on the server side (e.g., using PHP) by specifying the correct action attribute in the <form> tag -->
+
+</body>
+</html>
