@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Hometown - Contact</title>
+    <title>My Hometown - Businesses</title>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -48,37 +48,34 @@
             <span id="scroll-span" onclick="openNav()"><i class="fa fa-bars"></i></span>
         </div>
 
-    <!-- Contact Page Content -->
+        <!-- Main Content -->
     <div class="main-content">
-        <h1>Contact Us</h1>
-        <p>Have questions or suggestions? Reach out to us!</p>
-
-        <!-- Contact Form -->
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label>Preferred Contact Method:</label>
-            <label><input type="radio" name="contact-method" value="email" checked> Email</label>
-            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <label for="services">Interested Services:</label>
-            <select id="services" name="services[]" multiple>
-                <option value="tour">Guided Tours</option>
-                <option value="events">Local Events</option>
-                <option value="business">Business Opportunities</option>
-            </select>
-
-            <input type="submit" value="Submit">
-        </form>
+        <section>
+            <h2>Discover Exciting Events in Long Khánh</h2>
+            <ol>
+                <li>
+                    <h3>Tết Festival</h3>
+                    <p>Celebrate the Lunar New Year with the vibrant Tết Festival in Long Khánh. Experience traditional customs, colorful parades, and festive performances during this joyous occasion.</p>
+                </li>
+                <li>
+                    <h3>Mid-Autumn Festival</h3>
+                    <p>Join in the fun at the Mid-Autumn Festival, where families gather to enjoy mooncakes, lanterns, and traditional lion dances. This lively event is perfect for all ages and showcases the rich cultural heritage of Long Khánh.</p>
+                </li>
+                <li>
+                    <h3>Lantern Night Market</h3>
+                    <p>Experience the magic of Lantern Night Market, a bustling bazaar filled with dazzling lantern displays, delicious street food, and lively entertainment. Browse through unique handmade crafts and soak up the lively atmosphere of this beloved community event.</p>
+                </li>
+                <li>
+                    <h3>Dragon Boat Racing</h3>
+                    <p>Witness the exhilarating Dragon Boat Racing competition along the Đồng Nai River. Cheer on the teams as they paddle fiercely to the beat of drums, showcasing teamwork and skill in this thrilling annual event.</p>
+                </li>
+                <li>
+                    <h3>Cultural Performances</h3>
+                    <p>Immerse yourself in the beauty of traditional Vietnamese music and dance at various cultural performances held throughout the year in Long Khánh. From graceful ao dai fashion shows to dynamic folk dances, these performances showcase the rich cultural heritage of the region.</p>
+                </li>
+            </ol>
+        </section>
     </div>
-
 
     
     <footer>
@@ -87,8 +84,5 @@
     
     <!-- Your JavaScript may go here if needed -->
     <script src="JavaScript/script.js"></script>
-
-	<!-- Customize the form fields, labels, and options according to your specific needs. Also, make sure to handle the form submission on the server side (e.g., using PHP) by specifying the correct action attribute in the <form> tag -->
-
 </body>
 </html>

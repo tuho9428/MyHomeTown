@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/attractions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Hometown - Attractions</title>
 </head>
@@ -22,6 +23,7 @@
                 <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
                 <a href="attractions.html"> <i class="fa fa-bookmark"></i> Attractions</a>
                 <a href="businesses.html"> <i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+                <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
                 <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -30,24 +32,49 @@
           
     </header>
 
-    <!-- Attractions Page Content -->
+    <!-- Side Nav -->
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
+            <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
+            <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+            <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+            </div>
+            
+        <!-- Use any element to open the sidenav -->
+        <span id="scroll-span" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    </div>
+
+    <!-- Main Content -->
     <div class="main-content">
-        <h1>Discover Local Attractions</h1>
-        
-        <!-- Placeholder for Attractions -->
-        <div class="attraction">
-            <h2>Attraction Name 1</h2>
-            <img src="Images/attraction1.jpg" alt="Attraction Image">
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="attraction">
-            <h2>Attraction Name 2</h2>
-            <img src="Images/attraction2.jpg" alt="Attraction Image">
-            <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- Add more attractions as needed -->
+        <section>
+            <h2>Explore the Top Attractions in Long Khánh</h2>
+            <ol>
+                <li>
+                    <h3>Long Khánh Park</h3>
+                    <p>A serene oasis in the heart of the city, Long Khánh Park offers lush greenery, scenic walking paths, and recreational activities for visitors of all ages.</p>
+                </li>
+                <li>
+                    <h3>Nguyễn Huệ Temple</h3>
+                    <p>Immerse yourself in the rich history and cultural heritage of Long Khánh at Nguyễn Huệ Temple. This historic temple is known for its stunning architecture and tranquil ambiance.</p>
+                </li>
+                <li>
+                    <h3>Long Khánh Market</h3>
+                    <p>Dive into the vibrant local culture at Long Khánh Market, where you can browse through colorful stalls offering fresh produce, handicrafts, and delicious street food.</p>
+                </li>
+                <li>
+                    <h3>Bảo Vinh Pagoda</h3>
+                    <p>Discover the spiritual side of Long Khánh at Bảo Vinh Pagoda, a beautiful Buddhist temple known for its ornate decorations and serene atmosphere.</p>
+                </li>
+                <li>
+                    <h3>Suối Tre Waterfall</h3>
+                    <p>Escape the hustle and bustle of the city and journey to Suối Tre Waterfall, where you can relax amidst the natural beauty of cascading waters and lush forest surroundings.</p>
+                </li>
+            </ol>
+        </section>
     </div>
 
     

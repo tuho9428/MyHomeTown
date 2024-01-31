@@ -1,0 +1,44 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style the main content */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Style sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Style headings */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style paragraphs */
+p {
+    line-height: 1.5;
+}
+
+/* Style unordered lists */
+ul {
+    list-style-type: none;
+}
+
+/* Style list items */
+li {
+    margin-bottom: 5px;
+}

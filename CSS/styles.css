@@ -1,3 +1,15 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
 /* home.hmtl */
 .main-content {
     max-width: 800px;
@@ -23,7 +35,7 @@ header {
 .logo h1 {
     color: white; /* White color for the logo text */
     margin: 0; /* Remove default margins */
-    margin-left: 10px; /* Add margin to create space between text and logo */
+
 }
 
 .logo img {
@@ -41,25 +53,8 @@ footer {
 
 /* Make footer stick to the bottom of the page */
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Style for attractions and businesses */
-.attraction, .business {
-    margin-bottom: 30px;
-}
-
-.attraction img, .business img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Style for events */
-.event {
-    margin-bottom: 30px;
 }
 
 body {
@@ -185,7 +180,7 @@ body {
   span {
     display: none; /* Initially hide the span */
     position: fixed;
-    top: 1;
+    top: 2;
     right: 0;
     padding: 10px;
     cursor: pointer;
