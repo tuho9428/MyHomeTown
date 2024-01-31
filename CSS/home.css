@@ -37,10 +37,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 /* Style the call-to-action section */
 .cta-section {
     text-align: center;
