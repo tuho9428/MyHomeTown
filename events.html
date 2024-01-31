@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Hometown - Businesses</title>
+    <title>My Hometown - Events</title>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -52,32 +52,75 @@
     <div class="main-content">
         <section>
             <h2>Discover Exciting Events in Long Khánh</h2>
-            <ol>
-                <li>
-                    <h3>Tết Festival</h3>
-                    <p>Celebrate the Lunar New Year with the vibrant Tết Festival in Long Khánh. Experience traditional customs, colorful parades, and festive performances during this joyous occasion.</p>
-                </li>
-                <li>
-                    <h3>Mid-Autumn Festival</h3>
-                    <p>Join in the fun at the Mid-Autumn Festival, where families gather to enjoy mooncakes, lanterns, and traditional lion dances. This lively event is perfect for all ages and showcases the rich cultural heritage of Long Khánh.</p>
-                </li>
-                <li>
-                    <h3>Lantern Night Market</h3>
-                    <p>Experience the magic of Lantern Night Market, a bustling bazaar filled with dazzling lantern displays, delicious street food, and lively entertainment. Browse through unique handmade crafts and soak up the lively atmosphere of this beloved community event.</p>
-                </li>
-                <li>
-                    <h3>Dragon Boat Racing</h3>
-                    <p>Witness the exhilarating Dragon Boat Racing competition along the Đồng Nai River. Cheer on the teams as they paddle fiercely to the beat of drums, showcasing teamwork and skill in this thrilling annual event.</p>
-                </li>
-                <li>
-                    <h3>Cultural Performances</h3>
-                    <p>Immerse yourself in the beauty of traditional Vietnamese music and dance at various cultural performances held throughout the year in Long Khánh. From graceful ao dai fashion shows to dynamic folk dances, these performances showcase the rich cultural heritage of the region.</p>
-                </li>
-            </ol>
+
+        </section>
+    </div>
+
+    <div class="main-content">
+        <section>
+            <h3>Tết Festival</h3>
+            <p>Celebrate the Lunar New Year with the vibrant Tết Festival in Long Khánh. Experience traditional customs, colorful parades, and festive performances during this joyous occasion.</p>
+        </section>
+    </div>
+
+    <div class="main-content">
+        <section>
+            <h3>Mid-Autumn Festival</h3>
+            <p>Join in the fun at the Mid-Autumn Festival, where families gather to enjoy mooncakes, lanterns, and traditional lion dances. This lively event is perfect for all ages and showcases the rich cultural heritage of Long Khánh.</p>
         </section>
     </div>
 
     
+    <div class="main-content">
+        <section>
+            <h3>Lantern Night Market</h3>
+            <p>Experience the magic of Lantern Night Market, a bustling bazaar filled with dazzling lantern displays, delicious street food, and lively entertainment. Browse through unique handmade crafts and soak up the lively atmosphere of this beloved community event.</p>
+        </section>
+    </div>
+
+    <div class="main-content">
+        <section>
+            <h3>Dragon Boat Racing</h3>
+            <p>Witness the exhilarating Dragon Boat Racing competition along the Đồng Nai River. Cheer on the teams as they paddle fiercely to the beat of drums, showcasing teamwork and skill in this thrilling annual event.</p>
+    </section>
+    </div>
+
+    
+    <div class="main-content">
+        <section>
+                <h3>Cultural Performances</h3>
+                <p>Immerse yourself in the beauty of traditional Vietnamese music and dance at various cultural performances held throughout the year in Long Khánh. From graceful ao dai fashion shows to dynamic folk dances, these performances showcase the rich cultural heritage of the region.</p>
+        </section>
+    </div>
+
+    <div class="main-content">
+        <h2>Event Registration Form</h2>
+        <form action="submit_form.php" method="post">
+            <label>Select your preferred event:</label>
+            <input type="radio" id="event1" name="event" value="event1">
+            <label for="event1">Event 1</label><br>
+            <input type="radio" id="event2" name="event" value="event2">
+            <label for="event2">Event 2</label><br>
+            <input type="radio" id="event3" name="event" value="event3">
+            <label for="event3">Event 3</label><br>
+
+            <label>Select additional interests:</label>
+            <select name="interests[]" multiple>
+                <option value="music">Music</option>
+                <option value="food">Food</option>
+                <option value="art">Art</option>
+                <option value="sports">Sports</option>
+                <option value="sports">Sports</option>
+                <option value="sports">Sports</option>
+                <option value="sports">Sports</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+
     <footer>
         <p>&copy; 2024 My Hometown. All rights reserved.</p>
     </footer>
