@@ -91,22 +91,35 @@
 
     <div class="main-content">
         <h2>Rate Your Experience</h2>
-        <form action="home.html" method="post">
-        <div class="rate">
+
+    <form id="submitForm">
+        <label for="businesses">Choose a Business:</label>
+        <select id="businesses" name="businesses" required>
+            <option value="" disabled selected>Pick one...</option>
+            <option value="business1">Business 1</option>
+            <option value="business2">Business 2</option>
+            <option value="business3">Business 3</option>
+        </select><br><br>
+
         <label>Overall Rating:</label>
-        <input type="radio" id="rating1" name="rating" value="1">
-        <label for="rating1">1</label>
-        <input type="radio" id="rating2" name="rating" value="2">
-        <label for="rating2">2</label>
-        <input type="radio" id="rating3" name="rating" value="3">
-        <label for="rating3">3</label>
-        <input type="radio" id="rating4" name="rating" value="4">
-        <label for="rating4">4</label>
-        <input type="radio" id="rating5" name="rating" value="5">
-        <label for="rating5">5</label>
-    </div>
-        <label>Select reasons for your rating (optional):</label>
-        <select name="reasons[]" multiple>
+        <div class="rate">
+            
+            <input type="radio" id="rating1" name="rating" value="1">
+            <label for="rating1">1</label>
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">2</label>
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">3</label>
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">4</label>
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">5</label>
+        </div>
+        <br>
+
+        <label for="reasons">Select reasons for your rating (optional):</label>
+        <select id="reasons" name="reasons[]">
+            <option value="" disabled selected>Pick one...</option>
             <option value="friendly_staff">Friendly Staff</option>
             <option value="clean_environment">Clean Environment</option>
             <option value="quality_service">Quality Service</option>

@@ -10,11 +10,13 @@ body {
     font-size: 16px;
 }
 
-/* Style the main content */
-.main-content {
+
+.mid-content {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 20px auto 20px auto;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style sections */
@@ -53,3 +55,59 @@ li h3 {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* CSS to display radio buttons horizontally */
+.rate {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Display items horizontally */
+    align-items: center; /* Align items vertically centered */
+}
+
+.rate input[type="radio"] + label {
+    margin-right: 15px; /* Adjust the margin between the radio button and label */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input[type="radio"] {
+    margin-bottom: 10px;
+    margin-right: 10px; 
+}
+select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+/* Style the dropdown options */
+select option {
+    padding: 8px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

@@ -42,3 +42,21 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+/* Style the call-to-action section */
+.cta-section {
+    text-align: center;
+}
+
+.cta-section a {
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section a:hover {
+    background-color: #0056b3;
+}

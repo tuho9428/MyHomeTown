@@ -95,25 +95,47 @@
 
     <div class="main-content">
         <h2>Event Registration Form</h2>
-        <form action="submit_form.php" method="post">
+        <form id="submitForm">
+            <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            </div><br>
+
             <label>Select your preferred event:</label>
-            <input type="radio" id="event1" name="event" value="event1">
-            <label for="event1">Event 1</label><br>
-            <input type="radio" id="event2" name="event" value="event2">
-            <label for="event2">Event 2</label><br>
-            <input type="radio" id="event3" name="event" value="event3">
-            <label for="event3">Event 3</label><br>
+            <div><input type="radio" id="event1" name="event" value="event1">
+                <label for="event1">Event 1</label></div>
+
+            <div>  
+                <input type="radio" id="event2" name="event" value="event2">
+                <label for="event2">Event 2</label>
+            </div>
+            <div>
+                <input type="radio" id="event3" name="event" value="event3">
+                <label for="event3">Event 3</label>
+            </div>
+            <br>
 
             <label>Select additional interests:</label>
-            <select name="interests[]" multiple>
-                <option value="music">Music</option>
-                <option value="food">Food</option>
-                <option value="art">Art</option>
-                <option value="sports">Sports</option>
-                <option value="sports">Sports</option>
-                <option value="sports">Sports</option>
-                <option value="sports">Sports</option>
-            </select><br><br>
+            <br>
+            <div>
+                <select name="interests[]">
+                    <option value="" disabled selected >Pick One... </option>
+                    <option value="music">Music</option>
+                    <option value="food">Food</option>
+                    <option value="art">Art</option>
+                    <option value="sports">Sports</option>
+                    <option value="sports">Sports</option>
+                    <option value="sports">Sports</option>
+                    <option value="sports">Sports</option>
+                </select><br><br>
+            </div>
+            
 
             <input type="submit" value="Submit">
         </form>

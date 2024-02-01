@@ -51,7 +51,16 @@ function openNav() {
           span.style.display = "none";
       }
   }
-  
+
+  document.getElementById('submitForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Display a successful message
+    alert('Your form has been successfully submitted!');
+    
+    // Reset the form to clear old inputs
+    this.reset();
+});
 
   
 

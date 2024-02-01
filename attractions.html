@@ -50,38 +50,79 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <section>
-            <h2>Explore the Top Attractions in Long Khánh</h2>
-        </section>
+        <h2>Explore the Top Attractions in Long Khánh</h2>
+
     </div>
+<div class="mid-content">
+    <div class="floating">
+        <img class="float-right" src="./images/longkhanh1.jpg" alt="My Hometown Logo" width="50%">
+        <h3>Long Khánh Park</h3>
+        <p>A serene oasis in the heart of the city, Long Khánh Park offers lush greenery, scenic walking paths, and recreational activities for visitors of all ages.</p>
+        
+    </div><br>
+
+    <div class="floating">
+        <img class="float-left" src="./images/longkhanh1.jpg" alt="My Hometown Logo" width="50%">
+        <h3>Suối Tre Waterfall</h3>
+        <p>Escape the hustle and bustle of the city and journey to Suối Tre Waterfall, where you can relax amidst the natural beauty of cascading waters and lush forest surroundings.</p>
+        
+    </div><br>
+
+    <div class="floating">
+        <img class="float-right" src="./images/longkhanh1.jpg" alt="My Hometown Logo" width="50%">
+        <h3>Nguyễn Huệ Temple</h3>
+        <p>Immerse yourself in the rich history and cultural heritage of Long Khánh at Nguyễn Huệ Temple. This historic temple is known for its stunning architecture and tranquil ambiance.</p>
+        
+    </div><br>
+
+    <div class="floating">
+        <img class="float-left" src="./images/longkhanh1.jpg" alt="My Hometown Logo" width="50%">
+        <h3>Bảo Vinh Pagoda</h3>
+        <p>Discover the spiritual side of Long Khánh at Bảo Vinh Pagoda, a beautiful Buddhist temple known for its ornate decorations and serene atmosphere.</p>
+        
+    </div><br>
+</div>
+
 
     <div class="main-content">
-        <section>
-            <h3>Long Khánh Park</h3>
-            <p>A serene oasis in the heart of the city, Long Khánh Park offers lush greenery, scenic walking paths, and recreational activities for visitors of all ages.</p>
-        </section>
-    </div>
+        <h2>Rate Your Experience</h2>
 
-    <div class="main-content">
-        <section>
-            <h3>Suối Tre Waterfall</h3>
-            <p>Escape the hustle and bustle of the city and journey to Suối Tre Waterfall, where you can relax amidst the natural beauty of cascading waters and lush forest surroundings.</p>
-        </section>
-    </div>
+    <form id="submitForm">
+        <label for="businesses">Choose a Attraction:</label>
+        <select id="businesses" name="businesses" required>
+            <option value="" disabled selected>Pick one...</option>
+            <option value="business1">Attraction 1</option>
+            <option value="business2">Attraction 2</option>
+            <option value="business3">Attraction 3</option>
+        </select><br><br>
 
-    <div class="main-content">
-        <section>
-            <h3>Nguyễn Huệ Temple</h3>
-            <p>Immerse yourself in the rich history and cultural heritage of Long Khánh at Nguyễn Huệ Temple. This historic temple is known for its stunning architecture and tranquil ambiance.</p>
-        </section>
-    </div>
+        <div class="rate">
+            <label>Overall Rating:</label>
+            <input type="radio" id="rating1" name="rating" value="1">
+            <label for="rating1">1</label>
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">2</label>
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">3</label>
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">4</label>
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">5</label>
+        </div>
+        <br>
 
-    <div class="main-content">
-        <section>
-                <h3>Bảo Vinh Pagoda</h3>
-                <p>Discover the spiritual side of Long Khánh at Bảo Vinh Pagoda, a beautiful Buddhist temple known for its ornate decorations and serene atmosphere.</p>
-        </section>
-    </div>
+        <label for="reasons">Select reasons for your rating (optional):</label>
+        <select id="reasons" name="reasons[]">
+            <option value="" disabled selected>Pick one...</option>
+            <option value="friendly_staff">Friendly Staff</option>
+            <option value="clean_environment">Clean Environment</option>
+            <option value="quality_service">Quality Service</option>
+            <option value="fast_delivery">Fast Delivery</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Rating">
+    </form>
+</div>
 
     
     <footer>

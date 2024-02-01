@@ -233,3 +233,22 @@ body {
   .logo-container {
     display: inline-block; /* Display as inline-block to keep them in the same line */
 }
+
+
+.floating {
+  width: 90%;
+  margin: 1rem auto 10rem auto;
+  text-align: left;
+}
+
+.float-left {
+  width: 60%;
+  float: left;
+  margin-right: 30px;
+}
+
+.float-right {
+  width: 60%;
+  float: right;
+  margin-left: 30px;
+}

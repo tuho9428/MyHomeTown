@@ -18,7 +18,7 @@ label {
 /* Style for input fields */
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 textarea,
 select {
     width: 100%;
@@ -48,4 +48,9 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
 }

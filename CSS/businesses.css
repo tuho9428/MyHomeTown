@@ -38,28 +38,12 @@ p {
     line-height: 1.5;
 }
 
-/* Style ordered lists */
-ol {
-    list-style-type: none;
-}
-
-/* Style list items */
-li {
-    margin-bottom: 20px;
-}
-
-/* Style list item headings */
-li h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 20px;
+
 }
 
 /* CSS to display radio buttons horizontally */
@@ -67,6 +51,10 @@ body {
     display: flex; /* Use flexbox layout */
     flex-direction: row; /* Display items horizontally */
     align-items: center; /* Align items vertically centered */
+}
+
+.rate input[type="radio"] + label {
+    margin-right: 15px; /* Adjust the margin between the radio button and label */
 }
 
 form {
@@ -90,14 +78,26 @@ select {
     width: 100%;
     margin-bottom: 10px;
 }
+
+
+
+/* Style the dropdown options */
+select option {
+    padding: 8px;
+}
+
+/* Style the submit button */
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
     padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
+
+/* Style the submit button on hover */
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }

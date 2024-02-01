@@ -53,33 +53,34 @@
         <h1>Contact Us</h1>
         <p>Have questions or suggestions? Reach out to us!</p>
 
-        <!-- Contact Form -->
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Contact Form -->
+    <form id="submitForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone:</label>
-            <input type="number" id="phone" name="phone" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label>Preferred Contact Method:</label>
-            <label><input type="radio" name="contact-method" value="email" checked> Email</label>
-            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <label>Preferred Contact Method:</label>
+        <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+        <label><input type="radio" name="contact-method" value="phone"> Phone</label>
 
-            <label for="services">Interested Services:</label>
-            <select id="services" name="services[]" multiple>
-                <option value="tour">Guided Tours</option>
-                <option value="events">Local Events</option>
-                <option value="business">Business Opportunities</option>
-            </select>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+        <label for="services">Interested Services:</label>
+        <select id="services" name="services[]" multiple>
+            <option value="tour">Guided Tours</option>
+            <option value="events">Local Events</option>
+            <option value="business">Business Opportunities</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
     </div>
 
 
