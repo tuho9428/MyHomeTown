@@ -36,20 +36,6 @@ header {
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    color: white; /* White color for the logo text */
-    margin: 0; /* Remove default margins */
-
-}
-
-.logo img {
-    width: 20%; /* Set width for the logo */
-}
 
 
 /* Footer Styles */
@@ -138,6 +124,7 @@ body {
 #hometown-link {
     text-decoration: none; /* Remove underline */
     color: white; /* Set text color */
+    padding: 5px 10px;
 }
 
 #hometown-link:hover {
@@ -237,11 +224,6 @@ body {
   }
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-
-
-  .logo-container {
-    display: inline-block; /* Display as inline-block to keep them in the same line */
-}
 
 
 /* home.hmtl */
@@ -398,10 +380,14 @@ select option {
   filter: brightness(0.5); /* Adjust the brightness value as needed */
 }
 
-@media (max-width: 860px) {
+@media (max-width: 864px) {
   .container h1 {
     top: 40%;
     font-size: 24px; /* Adjust the font size as needed */
+  }
+  .logo h1 {
+    font-size: 20px;
+    margin: 10px;
   }
 
   .container p {
@@ -444,4 +430,24 @@ select option {
     font-size: 5px; /* Adjust the font size as needed */
     top: 50%; /* Adjust the positioning if needed */
   }
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo h1 {
+    color: white; /* White color for the logo text */
+    margin: 0; /* Remove default margins */
+
+}
+
+.logo img {
+    width: 20%; /* Set width for the logo */
+    margin-right: 10px;
 }
