@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Hometown - Contact</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="./Images/favicon3.ico">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -13,7 +15,7 @@
         <div class="logo">
             <img src="./images/vn12.png" alt="My Hometown Logo" width="20%">
             <h1>
-                <a href="home.html" class="hometown-link">My Hometown</a>
+                <a href="home.html" id="hometown-link">My Hometown</a>
             </h1>
         </div>
     
@@ -22,6 +24,7 @@
                 <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
                 <a href="attractions.html"> <i class="fa fa-bookmark"></i> Attractions</a>
                 <a href="businesses.html"> <i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+                <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
                 <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -30,37 +33,71 @@
           
     </header>
 
-    <!-- Contact Page Content -->
+        <!-- Side Nav -->
+        <div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
+                <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
+                <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+                <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
+                <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                </div>
+                
+            <!-- Use any element to open the sidenav -->
+            <span id="scroll-span" onclick="openNav()"><i class="fa fa-bars"></i></span>
+        </div>
+
+
+            <!-- Contact Page Content -->
     <div class="main-content">
-        <h1>Contact Us</h1>
-        <p>Have questions or suggestions? Reach out to us!</p>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions or suggestions? Reach out to us!</p>
+        
+            <img src= "/Images/contact13.jpg"  style="width: 100%; height: auto;" alt= "Home 1"> 
+            </div>
+        
+    </div>
+    <!-- Contact Page Content -->    <div class="main-content">
 
-        <!-- Contact Form -->
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Contact Form -->
+    <form id="submitForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label>Preferred Contact Method:</label>
-            <label><input type="radio" name="contact-method" value="email" checked> Email</label>
-            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <label>Preferred Contact Method:</label>
+        <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+        <label><input type="radio" name="contact-method" value="phone"> Phone</label>
 
-            <label for="services">Interested Services:</label>
-            <select id="services" name="services[]" multiple>
-                <option value="tour">Guided Tours</option>
-                <option value="events">Local Events</option>
-                <option value="business">Business Opportunities</option>
-            </select>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+        <label for="services">Interested Services:</label>
+        <select id="services" name="services[]" multiple>
+            <option value="tour">Guided Tours</option>
+            <option value="events">Local Events</option>
+            <option value="business">Business Opportunities</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
     </div>
 
+
+    
+    <footer>
+        <p>&copy; 2024 My Hometown. All rights reserved.</p>
+    </footer>
+    
     <!-- Your JavaScript may go here if needed -->
     <script src="JavaScript/script.js"></script>
 

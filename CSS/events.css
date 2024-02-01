@@ -1,0 +1,22 @@
+
+input[type="radio"],
+select {
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Set the font size */
+}
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}

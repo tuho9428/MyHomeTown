@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Hometown - About</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="./Images/favicon3.ico">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -13,7 +15,7 @@
         <div class="logo">
             <img src="./images/vn12.png" alt="My Hometown Logo" width="20%">
             <h1>
-                <a href="home.html" class="hometown-link">My Hometown</a>
+                <a href="home.html" id="hometown-link">My Hometown</a>
             </h1>
         </div>
     
@@ -22,6 +24,7 @@
                 <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
                 <a href="attractions.html"> <i class="fa fa-bookmark"></i> Attractions</a>
                 <a href="businesses.html"> <i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+                <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
                 <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -30,14 +33,132 @@
           
     </header>
 
-    <!-- About Page Content -->
-    <div class="main-content">
-        <h1>About Our Hometown</h1>
-        <p>Welcome to the About page where you can learn more about the history and culture of our charming town.</p>
-        <p>Feel free to explore and discover what makes our hometown special.</p>
-        <!-- Add more content as needed -->
+    <!-- Side Nav -->
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
+            <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
+            <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+            <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+            </div>
+            
+        <!-- Use any element to open the sidenav -->
+        <span id="scroll-span" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </div>
 
+    <!-- About Page Content -->
+    <div class="main-content">
+
+        <div class="container">
+            <h1>About Our Hometown</h1>
+            <p>Welcome to the About page where you can learn more about the history and culture of our charming town.
+                Feel free to explore and discover what makes our hometown special.
+            </p>
+            <img src="./images/home3.jpg" alt="My Hometown Logo" width="50%">
+        </div>
+    </div>
+
+
+    <div class="main-content">
+
+        <div class="floating">
+            <img class="float-left" src="./images/a1.jpg" alt="My Hometown Logo" width="50%">
+            <h2>About Long Khánh</h2>
+            <p>Long Khánh is a beautiful city located in the Đồng Nai province of Vietnam. With its strategic location, friendly community, and diverse economy, it offers a unique blend of urban convenience and natural beauty.</p>
+        </div>
+        
+
+    
+    <div class="floating">
+        <img class="float-left" src="./images/a2.jpg" alt="My Hometown Logo" width="50%">
+            <h2>History of Long Khánh</h2>
+            <p>Long Khánh has a fascinating history that dates back many centuries. Originally inhabited by indigenous communities, the area later became an important trading hub due to its strategic location along major trade routes.</p>
+            <p>In the 19th century, Long Khánh experienced significant growth and development under the rule of various dynasties. It served as a center of commerce, culture, and administration, attracting merchants, artisans, and scholars from neighboring regions.</p>
+            <p>During the colonial era, Long Khánh played a crucial role in the struggle for independence, with local residents actively participating in anti-colonial movements and resistance efforts.</p>
+            <p>Following Vietnam's independence, Long Khánh underwent rapid modernization and urbanization, transforming into the thriving city it is today. Despite the changes, the city has managed to preserve its rich cultural heritage and traditional values.</p>
+    </div>
+
+    <div class="floating">
+        <img class="float-left" src="./images/a3.jpg" alt="My Hometown Logo" width="50%">
+            <h2>Culture and Traditions</h2>
+        <p>The culture of Long Khánh is a vibrant tapestry woven from the diverse traditions of its inhabitants. From colorful festivals and religious ceremonies to traditional crafts and culinary delights, the city's cultural heritage is celebrated and cherished by its residents.</p>
+        <p>Visitors to Long Khánh can immerse themselves in the local culture by exploring historic temples, participating in traditional dance performances, or sampling delicious street food at bustling markets.</p>
+
+    </div>
+
+    <div class="floating">
+        <img class="float-left" src="./images/a4.jpg" alt="My Hometown Logo" width="50%">
+        <h2>Geography and Landmarks</h2>
+        <p>Located in the Đồng Nai province of Vietnam, Long Khánh is blessed with picturesque landscapes and natural beauty. The city is surrounded by lush greenery, rolling hills, and winding rivers, offering breathtaking views and outdoor recreational opportunities.</p>
+        <p>Notable landmarks in Long Khánh include ancient pagodas, historic sites, and architectural marvels that reflect the city's rich history and cultural heritage. Whether you're exploring the bustling city center or venturing into the tranquil countryside, there's always something new to discover in Long Khánh.</p>
+        <p>Join us as we celebrate the beauty, history, and culture of Long Khánh, and embark on a journey to uncover the hidden treasures of our beloved hometown!</p>
+
+    </div>
+</div>
+    
+ 
+    <div class="main-content">
+        <div class="container">
+            <h1>Our Mission</h1>
+            <p>Our mission is to promote and celebrate the beauty and culture of Long Khánh while supporting the local community and businesses, 
+                providing visitors and residents alike with valuable information 
+                about its historical significance, local attractions, upcoming events, and thriving businesses.</p>
+
+            <img src="./images/a5.jpg" alt="My Hometown Logo" width="50%">
+        </div>
+
+        
+    </div>
+    
+
+    <div  class="main-content">
+        <h2 >Our Team</h2>
+    </div>
+
+    <div class="bottom-container">
+        <div>
+            <img src= "./images/contact12.jpg"  style="width: 50%; height: 50%;  border-radius: 60%;" alt= "home12"> 
+            <h3>Nguyen Thi An</h3>
+            <p>Founder & CEO</p>
+        </div>
+
+        
+        <div>
+            <img src= "./images/contact12.jpg"  style="width: 50%; height: 50%; border-radius: 60%;" alt= "home14"> 
+            <h3>Tran Van Binh</h3>
+            <p>Content Manager</p>
+        </div>
+
+        <div>
+            <img src= "./images/contact12.jpg"  style="width: 50%; height: 50%; border-radius: 60%;" alt= "home14"> 
+            <h3>Nguyen Minh Duc</h3>
+            <p>Web Developer</p>
+        </div>
+
+        <div>
+            <img src= "./images/contact12.jpg"  style="width: 50%; height: 50%; border-radius: 60%;" alt= "home14"> 
+            <h3>Le Thi Huong</h3>
+            <p>Marketing Coordinator</p>
+        </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+    <div class="main-content">
+        <section class="cta-section">
+            <p>Explore our website to discover all that Long Khánh has to offer, and join us in celebrating the beauty and charm of our hometown!</p>
+            <br>
+            <p>Want to connect? <a href="contact.html">Contact Us</a></p>
+        </section>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 My Hometown. All rights reserved.</p>
+    </footer>
+    
     <!-- Your JavaScript may go here if needed -->
     <script src="JavaScript/script.js"></script>
 </body>
