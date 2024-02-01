@@ -365,3 +365,83 @@ select option {
   margin-bottom: 20px; /* Adjust margin as needed */
 
 }
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
+}
+
+.container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  z-index: 1; /* Ensure text is above the image */
+}
+
+.container p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  z-index: 1; /* Ensure text is above the image */
+}
+
+.container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.5); /* Adjust the brightness value as needed */
+}
+
+@media (max-width: 860px) {
+  .container h1 {
+    top: 40%;
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+
+  .container p {
+    font-size: 16px; /* Adjust the font size as needed */
+    top: 70%; /* Adjust the positioning if needed */
+  }
+}
+
+@media (max-width: 649px) {
+  .container h1 {
+    top: 15%;
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  .container p {
+    font-size: 12px; /* Adjust the font size as needed */
+    top: 60%; /* Adjust the positioning if needed */
+  }
+}
+
+@media (max-width: 400px) {
+  .container h1 {
+    top: 20%;
+    font-size: 10px; /* Adjust the font size as needed */
+  }
+
+  .container p {
+    font-size: 7px; /* Adjust the font size as needed */
+    top: 60%; /* Adjust the positioning if needed */
+  }
+}
+
+@media (max-width: 300px) {
+  .container h1 {
+    top: 15%;
+    font-size: 7px; /* Adjust the font size as needed */
+  }
+
+  .container p {
+    font-size: 5px; /* Adjust the font size as needed */
+    top: 50%; /* Adjust the positioning if needed */
+  }
+}
