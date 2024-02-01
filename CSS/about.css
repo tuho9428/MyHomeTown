@@ -1,48 +1,3 @@
-/* Reset default margin and padding */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set default font family and size */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-/* Style the main content */
-.main-content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-/* Style sections */
-section {
-    margin-bottom: 20px;
-}
-
-/* Style headings */
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Style paragraphs */
-p {
-    line-height: 1.5;
-}
-
-/* Style unordered lists */
-ul {
-    list-style-type: none;
-}
-
-/* Style list items */
-li {
-    margin-bottom: 5px;
-}
-
 /* Style the call-to-action section */
 .cta-section {
     text-align: center;
@@ -59,4 +14,16 @@ li {
 
 .cta-section a:hover {
     background-color: #0056b3;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bottom-container > div {
+    flex-basis: calc(20% - 5px); /* 50% width minus margin */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-left: 30px; /* Adjust margin as needed */
 }

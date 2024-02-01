@@ -34,23 +34,3 @@ select {
 input[type="radio"] {
     margin-right: 5px;
 }
-
-/* Style for submit button */
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-.success-message {
-    color: green;
-    font-weight: bold;
-}

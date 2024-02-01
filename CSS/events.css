@@ -1,98 +1,9 @@
-/* Reset default margin and padding */
-body, h1, h2, h3, p, ol, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set default font family and size */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-/* Style the main content */
-.main-content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-/* Style sections */
-section {
-    margin-bottom: 20px;
-}
-
-/* Style headings */
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-h3 {
-    color: #333;
-    margin-bottom: 5px;
-}
-
-/* Style paragraphs */
-p {
-    line-height: 1.5;
-}
-
-/* Style ordered lists */
-ol {
-    list-style-type: none;
-}
-
-/* Style list items */
-li {
-    margin-bottom: 20px;
-}
-
-/* Style list item headings */
-li h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-}
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-h2 {
-    color: #333;
-}
-
-label {
-    margin-bottom: 8px;
-}
 
 input[type="radio"],
 select {
     margin-bottom: 10px;
 }
 
-/* Style the submit button */
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-/* Style the submit button on hover */
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
 select {
     padding: 10px; /* Add padding for better appearance */
     font-size: 16px; /* Set the font size */
