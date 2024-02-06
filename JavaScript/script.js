@@ -1,46 +1,51 @@
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var span = document.getElementById("scroll-span");
+
+  // Show or hide the span based on scroll position
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    span.style.display = "block";
+  } else {
+    span.style.display = "none";
+  }
+}
+
+document
+  .getElementById("submitForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Display a successful message
+    alert("Your form has been successfully submitted!");
+
+    // Reset the form to clear old inputs
+    this.reset();
+  });
+
+/*
+CSS code borrowed from https://www.w3schools.com/
+Description: Adapted for responsive navigation bar and side navigation.
+*/
+
 // Open topnav
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
+}
 
 // Open the sidenav
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
-  
-  // Close/hide the sidenav
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+  document.getElementById("mySidenav").style.width = "100%";
+}
 
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-      var span = document.getElementById("scroll-span");
-  
-      // Show or hide the span based on scroll position
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          span.style.display = "block";
-      } else {
-          span.style.display = "none";
-      }
-  }
-
-  document.getElementById('submitForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Display a successful message
-    alert('Your form has been successfully submitted!');
-    
-    // Reset the form to clear old inputs
-    this.reset();
-});
-
-  
-
-
+// Close/hide the sidenav
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

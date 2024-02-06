@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Hometown - Contact</title>
-    <link rel="icon" type="image/png" sizes="64x64" href="./Images/favicon3.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="../Images/favicon3.ico">
 </head>
 <body>
+
+    <!--
+    CSS code borrowed from https://www.w3schools.com/
+    Description: Adapted for responsive navigation bar and side navigation.
+    -->
+
     <!-- Navigation Bar -->
     <header>
         <div class="logo">
             <h1>
-                <a href="home.html" id="hometown-link">My Hometown</a>
+                <a href="../home.html" id="hometown-link">My Hometown</a>
             </h1>
-            <a href="home.html" id="hometown-link">
-                <img src="./Images/vn12.png" alt="My Hometown Logo" width="20%">
+            <a href="../home.html" id="hometown-link">
+                <img src="../Images/vn12.png" alt="My Hometown Logo" width="20%">
             </a>
   
         </div>
     
         <div class="topnav" id="myTopnav">
-                <a href="home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
-                <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
-                <a href="attractions.html"> <i class="fa fa-bookmark"></i> Attractions</a>
-                <a href="businesses.html"> <i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-                <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-                <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
+            <a href="../home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="../About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+            <a href="../Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+            <a href="../Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+            <a href="../Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+            <a href="../Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
           </div>
           
@@ -38,12 +44,12 @@
         <div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-                <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
-                <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
-                <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-                <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-                <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                <a href="../home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="../About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+                <a href="../Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+                <a href="../Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+                <a href="../Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+                <a href="../Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
                 </div>
                 
             <!-- element to open the sidenav -->
@@ -54,10 +60,11 @@
 
     <div class="main-content">
         <div class="container">
+            <!-- Heading for the contact section -->
             <h1>Contact Us</h1>
             <p>Have questions or suggestions? Reach out to us!</p>
         
-            <img src= "./Images/contact13.jpg"  style="width: 100%; height: auto;" alt= "Home 1"> 
+            <img src= "../Images/contact13.jpg"  style="width: 100%; height: auto;" alt= "Contact us picture"> 
             </div>
         
     </div>
@@ -95,12 +102,13 @@
 
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 My Hometown. All rights reserved.</p>
     </footer>
     
     <!-- JavaScript -->
-    <script src="JavaScript/script.js"></script>
+    <script src="../JavaScript/script.js"></script>
 
 </body>
 </html>

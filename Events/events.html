@@ -3,40 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="CSS/events.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/events.css" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../Images/favicon3.ico">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>My Hometown - Events</title>
-    |
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="./Images/favicon3.ico"
-    />
   </head>
   <body>
+
+    <!--
+    CSS code borrowed from https://www.w3schools.com/
+    Description: Adapted for responsive navigation bar and side navigation.
+    -->
+
     <!-- Navigation Bar -->
     <header>
       <div class="logo">
         <h1>
-          <a href="home.html" id="hometown-link">My Hometown</a>
+          <a href="../home.html" id="hometown-link">My Hometown</a>
         </h1>
-        <a href="home.html" id="hometown-link">
-          <img src="./Images/vn12.png" alt="My Hometown Logo" width="20%" />
+        <a href="../home.html" id="hometown-link">
+          <img src="../Images/vn12.png" alt="Logo" width="20%" />
         </a>
       </div>
 
       <div class="topnav" id="myTopnav">
-        <a href="home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
-        <a href="attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
-        <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-        <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-        <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="../home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="../About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+        <a href="../Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+        <a href="../Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+        <a href="../Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+        <a href="../Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
       </div>
     </header>
@@ -45,12 +45,12 @@
     <div>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
-        <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
-        <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-        <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="../home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="../About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+        <a href="../Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+        <a href="../Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+        <a href="../Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+        <a href="../Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
       </div>
 
       <!-- Element to open the sidenav -->
@@ -62,16 +62,18 @@
     <!-- Content -->
     <div class="main-content">
       <section>
+        <!-- Heading for the events section -->
         <h2>Discover Exciting Events in Long Khánh</h2>
       </section>
     </div>
 
     <div class="mid-content">
+      <!-- Individual event sections -->
       <div id="small" class="floating">
         <img
           class="float-left"
-          src="./Images/tet.jpg"
-          alt="My Hometown Logo"
+          src="../Images/tet.jpg"
+          alt="Picture of Tết Festival"
           width="50%"
         />
         <h3>Tết Festival</h3>
@@ -86,8 +88,8 @@
       <div class="floating">
         <img
           class="float-right"
-          src="./Images/mid.jpg"
-          alt="My Hometown Logo"
+          src="../Images/mid.jpg"
+          alt="Picture of Mid-Autumn Festival"
           width="50%"
         />
         <h3>Mid-Autumn Festival</h3>
@@ -103,8 +105,8 @@
       <div class="floating">
         <img
           class="float-left"
-          src="./Images/night.jpg"
-          alt="My Hometown Logo"
+          src="../Images/night.jpg"
+          alt="Picture of Lantern Night Market"
           width="50%"
         />
         <h3>Lantern Night Market</h3>
@@ -120,8 +122,8 @@
       <div class="floating">
         <img
           class="float-right"
-          src="./Images/cul.jpg"
-          alt="My Hometown Logo"
+          src="../Images/cul.jpg"
+          alt="Picture of Cultural Performances"
           width="50%"
         />
 
@@ -136,6 +138,7 @@
     </div>
 
     <div class="main-content">
+      <!-- Section for the event registration form -->
       <h2>Event Registration Form</h2>
       <form id="submitForm">
         <div>
@@ -180,8 +183,9 @@
             <option value="sports">Sports</option>
             <option value="music">Music</option>
             <option value="food">Food</option>
-            <option value="art">Art</option></select
-          ><br /><br /><br />
+            <option value="art">Art</option>
+            </select>
+            <br /><br /><br />
         </div>
 
         <input type="submit" value="Submit" />
@@ -193,6 +197,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="JavaScript/script.js"></script>
+    <script src="../JavaScript/script.js"></script>
   </body>
 </html>

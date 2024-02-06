@@ -4,37 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./Images/favicon3.ico">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>My Hometown - Home</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="./Images/favicon3.ico"
-    />
   </head>
   <body>
+
+    <!--
+    CSS code borrowed from https://www.w3schools.com/
+    Description: Adapted for responsive navigation bar and side navigation.
+    -->
+
     <!-- Navigation Bar -->
     <header>
       <div class="logo">
         <h1>
-          <a href="home.html" id="hometown-link">My Hometown</a>
+          <a href="./home.html" id="hometown-link">My Hometown</a>
         </h1>
-        <a href="home.html" id="hometown-link">
+        <a href="./home.html" id="hometown-link">
           <img src="./Images/vn12.png" alt="My Hometown Logo" width="20%" />
         </a>
       </div>
 
       <div class="topnav" id="myTopnav">
         <a href="home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
-        <a href="attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
-        <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-        <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-        <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+        <a href="Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+        <a href="Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+        <a href="Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+        <a href="Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
       </div>
     </header>
@@ -43,12 +44,12 @@
     <div>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
-        <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
-        <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-        <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+        <a href="Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+        <a href="Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+        <a href="Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+        <a href="Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
       </div>
 
       <!-- Element to open the sidenav -->
@@ -62,12 +63,13 @@
       <div class="container">
         <h1>Welcome to My Hometown!</h1>
         <p>Discover the charm and beauty of our wonderful town.</p>
-        <img src="./Images/home1.jpg" alt="My Hometown Logo" width="50%" />
+        <img src="./Images/home1.jpg" alt="Picture of Long Khánh"/>
       </div>
     </div>
 
     <!-- Content -->
     <div class="main-content">
+      <!-- About section -->
       <div class="container">
         <h1>About Long Khánh</h1>
         <p>
@@ -76,11 +78,13 @@
           breathtaking landscapes, Long Khánh offers visitors a unique blend of
           traditional charm and modern convenience.
         </p>
-        <img src="./Images/longkhanh1.jpg" alt="My Hometown Logo" width="50%" />
+        <img src="./Images/longkhanh1.jpg" alt="Picture of Long Khánh"/>
       </div>
     </div>
 
+    
     <div id="home-container">
+      <!-- Key attractions section -->
       <div class="main-content">
         <section class="attractions-section">
           <h3>Key Attractions</h3>
@@ -89,10 +93,11 @@
             <li>Nguyễn Huệ Temple</li>
             <li>Long Khánh Market</li>
           </ul>
-          <img src="./Images/h1.jpg" alt="My Hometown Logo" width="50%" />
+          <img src="./Images/h1.jpg" alt="A picture of key attractions in Long Khánh." width="50%" />
         </section>
       </div>
 
+       <!-- Local businesses section -->
       <div class="main-content">
         <section class="businesses-section">
           <h3>Local Businesses</h3>
@@ -105,10 +110,11 @@
             <li>Café Sài Gòn</li>
             <li>Artisan Craft Shop</li>
           </ul>
-          <img src="./Images/b3.jpg" alt="My Hometown Logo" width="50%" />
+          <img src="./Images/b3.jpg" alt="A picture of Local Businesses in Long Khánh." width="50%" />
         </section>
       </div>
 
+      <!-- Upcoming events section -->
       <div class="main-content">
         <section class="events-section">
           <h3>Upcoming Events</h3>
@@ -117,22 +123,24 @@
             <li>Tết Festival - January 25th</li>
             <li>Long Khánh Food Festival - February 15th</li>
           </ul>
-          <img src="./Images/home4.jpg" alt="My Hometown Logo" width="50%" />
+          <img src="./Images/home4.jpg" alt="A picture of Upcoming Events in Long Khánh." width="50%" />
         </section>
       </div>
     </div>
 
+    <!-- Call-to-action section -->
     <div class="main-content">
       <section class="cta-section">
         <p>
           Ready to explore more? Check out our
-          <a href="attractions.html">Attractions</a>,
-          <a href="businesses.html">Businesses</a>,
-          <a href="events.html">Events</a>, and more.
+          <a href="Attractions/attractions.html">Attractions</a>,
+          <a href="Businesses/businesses.html">Businesses</a>,
+          <a href="Events/events.html">Events</a>, and more.
         </p>
       </section>
     </div>
 
+    <!-- Footer with copyright information -->
     <footer>
       <p>&copy; 2024 My Hometown. All rights reserved.</p>
     </footer>
