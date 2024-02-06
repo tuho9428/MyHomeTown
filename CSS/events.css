@@ -5,8 +5,8 @@ select {
 }
 
 select {
-    padding: 10px; /* Add padding for better appearance */
-    font-size: 16px; /* Set the font size */
+    padding: 10px;
+    font-size: 16px;
 }
 /* Style for input fields */
 input[type="text"],
