@@ -45,6 +45,8 @@ To run MyHometownWebsite locally, follow these steps:
 ## Usage
 Once the website is set up, you can navigate through the different pages to explore information about Long Khánh. Click on the navigation bar to visit specific sections such as attractions, businesses, and events.
 
+You can access the MyHometownWebsite online at [MyHomeTown](https://tuho9428.github.io/MyHomeTown/).
+
 ## Contributing
 Contributions to MyHometownWebsite are welcome! To contribute:
 1. Fork the repository.
