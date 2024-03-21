@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../Images/favicon3.ico">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,33 +15,35 @@
       rel="icon"
       type="image/png"
       sizes="64x64"
-      href="./Images/favicon3.ico"
+      href="../Images/favicon3.ico"
     />
   </head>
   <body>
+
+    <!--
+    CSS code borrowed from https://www.w3schools.com/
+    Description: Adapted for responsive navigation bar and side navigation.
+    -->
+
     <!-- Navigation Bar -->
     <header>
       <div class="logo">
         <h1>
-          <a href="home.html" id="hometown-link">My Hometown</a>
+          <a href="../home.html" id="hometown-link">My Hometown</a>
         </h1>
-        <a href="home.html" id="hometown-link">
-          <img src="./Images/vn12.png" alt="My Hometown Logo" width="20%" />
+        <a href="../home.html" id="hometown-link">
+          <img src="../Images/vn12.png" alt="Logo" width="20%" />
         </a>
       </div>
 
       <div class="topnav" id="myTopnav">
-        <a href="home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
-        <a href="attractions.html">
-          <i class="fa fa-bookmark"></i> Attractions</a>
-        <a href="businesses.html">
-          <i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-        <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-        <a href="contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <a href="../home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="../About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+        <a href="../Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+        <a href="../Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+        <a href="../Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+        <a href="../Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
       </div>
     </header>
 
@@ -48,12 +51,12 @@
     <div>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-        <a href="about.html"><i class="fa fa-fw fa-address-card"></i>About</a>
-        <a href="attractions.html"><i class="fa fa-bookmark"></i>Attractions</a>
-        <a href="businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
-        <a href="events.html"><i class="fa fa-calendar"></i>Events</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="../home.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="../About/about.html"> <i class="fa fa-fw fa-address-card"></i>About</a>
+        <a href="../Attractions/attractions.html"><i class="fa fa-bookmark"></i> Attractions</a>
+        <a href="../Businesses/businesses.html"><i class="fa fa-fw fa-briefcase"></i>Businesses</a>
+        <a href="../Events/events.html"><i class="fa fa-calendar"></i>Events</a>
+        <a href="../Contact/contact.html"> <i class="fa fa-fw fa-envelope"></i>Contact</a>
       </div>
 
       <!-- element to open the sidenav -->
@@ -63,22 +66,26 @@
     <!-- About Page Content -->
     <div class="main-content">
       <div class="container">
+        <!-- Heading and introductory text -->
         <h1>About Our Hometown</h1>
         <p>
           Welcome to the About page where you can learn more about the history
           and culture of our charming town. Feel free to explore and discover
           what makes our hometown special.
         </p>
-        <img src="Images/home3.jpg" alt="My Hometown Logo" width="50%" />
+        <img src="../Images/home3.jpg" alt="Picture of Long Khánh" width="50%" />
       </div>
     </div>
 
+    <!-- Detailed information sections about the hometown -->
+    <!-- Repeat floating sections for different aspects of Long Khánh -->
+    <!-- Each section includes an image, heading, and description -->
     <div class="main-content">
       <div class="floating">
         <img
           class="float-left"
-          src="./Images/a1.jpg"
-          alt="My Hometown Logo"
+          src="../Images/a1.jpg"
+          alt="Picture of Long Khánh"
           width="50%"
         />
         <h2>About Long Khánh</h2>
@@ -93,8 +100,8 @@
       <div class="floating">
         <img
           class="float-left"
-          src="./Images/a2.jpg"
-          alt="My Hometown Logo"
+          src="../Images/a2.jpg"
+          alt="Picture of Long Khánh"
           width="50%"
         />
         <h2>History of Long Khánh</h2>
@@ -126,8 +133,8 @@
       <div class="floating">
         <img
           class="float-left"
-          src="./Images/a3.jpg"
-          alt="My Hometown Logo"
+          src="../Images/a3.jpg"
+          alt="Picture of Long Khánh"
           width="50%"
         />
         <h2>Culture and Traditions</h2>
@@ -147,8 +154,8 @@
       <div class="floating">
         <img
           class="float-left"
-          src="./Images/a4.jpg"
-          alt="My Hometown Logo"
+          src="../Images/a4.jpg"
+          alt="Picture of Long Khánh"
           width="50%"
         />
         <h2>Geography and Landmarks</h2>
@@ -175,6 +182,7 @@
 
     <div class="main-content">
       <div class="container">
+         <!-- Heading and paragraph about the mission -->
         <h1>Our Mission</h1>
         <p>
           Our mission is to promote and celebrate the beauty and culture of Long
@@ -184,10 +192,11 @@
           thriving businesses.
         </p>
 
-        <img src="./Images/a5.jpg" alt="My Hometown Logo" width="50%" />
+        <img src="../Images/a5.jpg" alt="Picture of Our Mission" width="50%" />
       </div>
     </div>
 
+    <!-- Our Team section -->
     <div class="main-content">
       <h2>Our Team</h2>
       <br />
@@ -195,9 +204,9 @@
       <div class="bottom-container">
         <div>
           <img
-            src="./Images/contact12.jpg"
+            src="../Images/contact12.jpg"
             style="width: 50%; height: 50%; border-radius: 60%"
-            alt="home12"
+            alt="Profile picture"
           />
           <h3>Nguyen Thi An</h3>
           <p>Founder & CEO</p>
@@ -205,9 +214,9 @@
 
         <div>
           <img
-            src="./Images/contact12.jpg"
+            src="../Images/contact12.jpg"
             style="width: 50%; height: 50%; border-radius: 60%"
-            alt="home14"
+            alt="Profile picture"
           />
           <h3>Tran Van Binh</h3>
           <p>Content Manager</p>
@@ -215,9 +224,9 @@
 
         <div>
           <img
-            src="./Images/contact12.jpg"
+            src="../Images/contact12.jpg"
             style="width: 50%; height: 50%; border-radius: 60%"
-            alt="home14"
+            alt="Profile picture"
           />
           <h3>Nguyen Minh Duc</h3>
           <p>Web Developer</p>
@@ -225,9 +234,9 @@
 
         <div>
           <img
-            src="./Images/contact12.jpg"
+            src="../Images/contact12.jpg"
             style="width: 50%; height: 50%; border-radius: 60%"
-            alt="home14"
+            alt="Profile picture"
           />
           <h3>Le Thi Huong</h3>
           <p>Marketing Coordinator</p>
@@ -236,6 +245,7 @@
     </div>
 
 
+    <!-- Call-to-action section -->
     <div class="main-content">
       <section class="cta-section">
         <p>
@@ -243,15 +253,16 @@
           join us in celebrating the beauty and charm of our hometown!
         </p>
         <br />
-        <p>Want to connect? <a href="contact.html">Contact Us</a></p>
+        <p>Want to connect? <a href="../Contact/contact.html">Contact Us</a></p>
       </section>
     </div>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2024 My Hometown. All rights reserved.</p>
     </footer>
 
     <!--JavaScript-->
-    <script src="JavaScript/script.js"></script>
+    <script src="../JavaScript/script.js"></script>
   </body>
 </html>
